@@ -4,9 +4,23 @@
   "description": "Hamza Calculator Desktop App",
   "main": "electron-main.cjs",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "devDependencies": {
-    "electron": "^45.0.0"
+    "electron": "^45.0.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.hamza.calculator",
+    "productName": "Hamza Calculator",
+    "linux": {
+      "target": "AppImage"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "HamzProgrm",
+      "repo": "Hamza-calc"
+    }
   }
 }

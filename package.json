@@ -1,0 +1,12 @@
+{
+  "name": "hamza-calculator",
+  "version": "1.0.0",
+  "description": "Hamza Calculator Desktop App",
+  "main": "electron-main.cjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.0.0"
+  }
+}
